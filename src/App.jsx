@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Rooms from './pages/Rooms';
 import About from './pages/About';
 import Properties from './pages/Properties';
 import PropertyDetails from './pages/PropertyDetails';
@@ -18,6 +19,7 @@ function App() {
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/rooms" element={<Rooms />} />
             <Route path="/about" element={<About />} />
             <Route path="/properties" element={<Properties />} />
             <Route path="/properties/:id" element={<PropertyDetails />} />
